@@ -3,13 +3,11 @@
 
 char ** cellsInRange(char * s, int* returnSize){
     unsigned len = (s[3] + 1) - s[0], i =0,index = 0;
-    printf("%u\n",len);
     len = len * ((s[4] - '0')  - (s[1] - '0') + 1);
   
     *returnSize = len;
     char cstart = s[1];
-    printf("%u\n",len);
-    
+  
     char** arr = (char**)malloc(len * sizeof(char*));
 
     for(i = 0; i < len; i++)
